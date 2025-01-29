@@ -1,0 +1,107 @@
+/* styles.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    /* Use a custom Google Font for a modern look */
+    margin: 20px;
+    background: linear-gradient(to right, #f8f9fa, #e2eafc);
+    /* Gradient background */
+    color: #333;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #007bff;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px #e2eafc;
+    /* Text shadow for a unique effect */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 15px;
+    /* Slightly more rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    /* Enhanced shadow for depth */
+    padding: 30px;
+    margin-bottom: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    animation: fadeIn 1s ease-in-out;
+    /* Smooth fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+input,
+button {
+    margin-top: 5px;
+    padding: 12px;
+    /* Slightly larger padding */
+    font-size: 1.1em;
+    border-radius: 8px;
+    /* More rounded corners */
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+button:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+    /* Enhanced focus effect */
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    /* Added transform effect */
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    /* Slightly enlarges button on hover */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #ffffff;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    /* More rounded corners */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    /* Enhanced shadow for depth */
+    transition: transform 0.2s ease;
+}
+
+li:hover {
+    transform: scale(1.02);
+}
