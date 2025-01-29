@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fungible Token Transfer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1>Fungible Token Transfer</h1>
+      <div>
+        <label for="fromAccount">From Account:</label>
+        <input type="text" id="fromAccount" placeholder="Enter From Account" />
+      </div>
+      <div>
+        <label for="toAccount">To Account:</label>
+        <input type="text" id="toAccount" placeholder="Enter To Account" />
+      </div>
+      <div>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" placeholder="Enter Amount" />
+      </div>
+      <button onclick="transfer()">Transfer</button>
+      <p id="status"></p>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
